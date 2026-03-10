@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Pequeños Genios — Inicial y Primaria | Lima, Perú</title>
+    <meta name="description" content="Colegio Pequeños Genios. Educación inicial y primaria de calidad en Lima. Formamos niños felices, creativos y preparados para el futuro.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#" class="navbar__logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">Pequeños <strong>Genios</strong></span>
+            </a>
+            <ul class="navbar__menu" id="navMenu">
+                <li><a href="#inicio" class="navbar__link">Inicio</a></li>
+                <li><a href="#nosotros" class="navbar__link">Nosotros</a></li>
+                <li><a href="#galeria" class="navbar__link">Galería</a></li>
+                <li><a href="#profesores" class="navbar__link">Profesores</a></li>
+                <li><a href="#noticias" class="navbar__link">Noticias</a></li>
+                <li><a href="#contacto" class="navbar__link navbar__link--cta">Admisión</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <span class="theme-toggle__icon theme-toggle__icon--light">☀️</span>
+                    <span class="theme-toggle__icon theme-toggle__icon--dark">🌙</span>
+                </button>
+                <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SLIDER ========== -->
+    <section class="hero" id="inicio">
+        <div class="hero__slider" id="heroSlider">
+            <div class="hero__slide active" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&q=80')">
+                <div class="hero__overlay"></div>
+                <div class="container hero__content">
+                    <span class="hero__badge">📚 Matrículas abiertas 2026</span>
+                    <h1 class="hero__title">Donde aprender <br>es una <span class="text-highlight">aventura</span></h1>
+                    <p class="hero__subtitle">Formamos niños felices, creativos y preparados para el futuro con una educación basada en valores y tecnología.</p>
+                    <div class="hero__actions">
+                        <a href="#contacto" class="btn btn--primary">Solicitar admisión</a>
+                        <a href="#nosotros" class="btn btn--white">Conócenos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1588072432836-e10032774350?w=1600&q=80')">
+                <div class="hero__overlay"></div>
+                <div class="container hero__content">
+                    <span class="hero__badge">🎨 Nivel Inicial</span>
+                    <h1 class="hero__title">Sus primeros pasos <br>hacia el <span class="text-highlight">conocimiento</span></h1>
+                    <p class="hero__subtitle">Un ambiente seguro y estimulante para niños de 3 a 5 años, con metodologías lúdicas y aprendizaje significativo.</p>
+                    <div class="hero__actions">
+                        <a href="#contacto" class="btn btn--primary">Más información</a>
+                        <a href="#galeria" class="btn btn--white">Ver galería</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80')">
+                <div class="hero__overlay"></div>
+                <div class="container hero__content">
+                    <span class="hero__badge">📖 Nivel Primaria</span>
+                    <h1 class="hero__title">Educación sólida <br>para grandes <span class="text-highlight">sueños</span></h1>
+                    <p class="hero__subtitle">Primaria completa de 1° a 6° grado con enfoque en competencias, valores y desarrollo integral del estudiante.</p>
+                    <div class="hero__actions">
+                        <a href="#contacto" class="btn btn--primary">Solicitar admisión</a>
+                        <a href="#profesores" class="btn btn--white">Nuestro equipo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__dots" id="heroDots">
+            <button class="hero__dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="hero__dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="hero__dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats">
+        <div class="container stats__inner">
+            <div class="stat reveal">
+                <span class="stat__icon">👦</span>
+                <span class="stat__number" data-target="450">0</span><span class="stat__suffix">+</span>
+                <span class="stat__label">Alumnos felices</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat__icon">👩‍🏫</span>
+                <span class="stat__number" data-target="35">0</span><span class="stat__suffix">+</span>
+                <span class="stat__label">Profesores dedicados</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat__icon">🏫</span>
+                <span class="stat__number" data-target="20">0</span><span class="stat__suffix">+</span>
+                <span class="stat__label">Años de experiencia</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat__icon">🏠</span>
+                <span class="stat__number" data-target="24">0</span>
+                <span class="stat__label">Aulas modernas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MISIÓN / VISIÓN / VALORES ========== -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">¿Quiénes somos?</span>
+                <h2 class="section-title">Formando el futuro, un niño a la vez</h2>
+                <p class="section-desc">Desde 2005, somos una comunidad educativa comprometida con el desarrollo integral de cada estudiante.</p>
+            </div>
+            <div class="about__grid">
+                <div class="about-card about-card--mission reveal">
+                    <div class="about-card__icon">🎯</div>
+                    <h3 class="about-card__title">Nuestra Misión</h3>
+                    <p class="about-card__text">Brindar una educación de calidad centrada en el estudiante, fomentando el pensamiento crítico, la creatividad y los valores humanos en un ambiente seguro e inclusivo.</p>
+                </div>
+                <div class="about-card about-card--vision reveal">
+                    <div class="about-card__icon">🔭</div>
+                    <h3 class="about-card__title">Nuestra Visión</h3>
+                    <p class="about-card__text">Ser reconocidos como la institución educativa líder en la formación integral de niños, preparándolos para enfrentar los retos del siglo XXI con confianza y valores sólidos.</p>
+                </div>
+                <div class="about-card about-card--values reveal">
+                    <div class="about-card__icon">💎</div>
+                    <h3 class="about-card__title">Nuestros Valores</h3>
+                    <div class="about-card__values">
+                        <span class="value-tag">Respeto</span>
+                        <span class="value-tag">Responsabilidad</span>
+                        <span class="value-tag">Solidaridad</span>
+                        <span class="value-tag">Creatividad</span>
+                        <span class="value-tag">Honestidad</span>
+                        <span class="value-tag">Excelencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALERÍA ========== -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Galería</span>
+                <h2 class="section-title">Momentos que nos llenan de orgullo</h2>
+                <p class="section-desc">Descubre nuestras instalaciones, actividades y los momentos más especiales de nuestros alumnos.</p>
+            </div>
+            <div class="gallery__grid reveal">
+                <div class="gallery__item gallery__item--wide">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80" alt="Biblioteca del colegio" loading="lazy">
+                    <div class="gallery__caption">Biblioteca</div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80" alt="Clase de arte" loading="lazy">
+                    <div class="gallery__caption">Clase de Arte</div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=600&q=80" alt="Patio del colegio" loading="lazy">
+                    <div class="gallery__caption">Recreo</div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?w=600&q=80" alt="Laboratorio de ciencias" loading="lazy">
+                    <div class="gallery__caption">Laboratorio</div>
+                </div>
+                <div class="gallery__item gallery__item--wide">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&q=80" alt="Actividad deportiva" loading="lazy">
+                    <div class="gallery__caption">Deportes</div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600&q=80" alt="Aula de computo" loading="lazy">
+                    <div class="gallery__caption">Aula de cómputo</div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&q=80" alt="Día del logro" loading="lazy">
+                    <div class="gallery__caption">Día del Logro</div>
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80" alt="Clase en aula" loading="lazy">
+                    <div class="gallery__caption">Nuestras Aulas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VIDEO INSTITUCIONAL ========== -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <div class="video-section__inner reveal">
+                <div class="video-section__content">
+                    <span class="section-tag">Video institucional</span>
+                    <h2 class="section-title">Conoce nuestra comunidad educativa</h2>
+                    <p class="video-section__text">Descubre por qué más de 450 familias confían en Pequeños Genios para la educación de sus hijos. Un recorrido por nuestras instalaciones, metodología y lo que nos hace diferentes.</p>
+                    <ul class="video-section__list">
+                        <li>✅ Metodología innovadora basada en proyectos</li>
+                        <li>✅ Infraestructura moderna y segura</li>
+                        <li>✅ Equipo docente altamente capacitado</li>
+                        <li>✅ Programa de acompañamiento emocional</li>
+                    </ul>
+                </div>
+                <div class="video-section__player">
+                    <div class="video-placeholder" id="videoPlaceholder">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80" alt="Video institucional del colegio" loading="lazy">
+                        <button class="video-play-btn" aria-label="Reproducir video">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="29" fill="white" fill-opacity="0.9"/>
+                                <path d="M24 18l18 12-18 12V18z" fill="#3B82F6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROFESORES ========== -->
+    <section class="teachers" id="profesores">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Nuestro equipo</span>
+                <h2 class="section-title">Docentes comprometidos con la excelencia</h2>
+                <p class="section-desc">Profesionales apasionados que inspiran, guían y acompañan a cada estudiante en su proceso de aprendizaje.</p>
+            </div>
+            <div class="teachers__grid">
+                <div class="teacher-card reveal">
+                    <div class="teacher-card__image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Directora Ana Castillo" loading="lazy">
+                    </div>
+                    <div class="teacher-card__info">
+                        <h3 class="teacher-card__name">Ana Castillo Rojas</h3>
+                        <span class="teacher-card__role">Directora General</span>
+                        <p class="teacher-card__bio">Magíster en Gestión Educativa. 18 años liderando proyectos pedagógicos innovadores.</p>
+                    </div>
+                </div>
+                <div class="teacher-card reveal">
+                    <div class="teacher-card__image">
+                        <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=400&q=80" alt="Profesor Carlos Quispe" loading="lazy">
+                    </div>
+                    <div class="teacher-card__info">
+                        <h3 class="teacher-card__name">Carlos Quispe Luna</h3>
+                        <span class="teacher-card__role">Coordinador de Primaria</span>
+                        <p class="teacher-card__bio">Especialista en didáctica de las matemáticas. Promotor del aprendizaje basado en juegos.</p>
+                    </div>
+                </div>
+                <div class="teacher-card reveal">
+                    <div class="teacher-card__image">
+                        <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=400&q=80" alt="Profesora María Flores" loading="lazy">
+                    </div>
+                    <div class="teacher-card__info">
+                        <h3 class="teacher-card__name">María Flores Vega</h3>
+                        <span class="teacher-card__role">Coordinadora de Inicial</span>
+                        <p class="teacher-card__bio">Licenciada en Educación Inicial con especialización en estimulación temprana y neuroeducación.</p>
+                    </div>
+                </div>
+                <div class="teacher-card reveal">
+                    <div class="teacher-card__image">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&q=80" alt="Profesor Diego Ramírez" loading="lazy">
+                    </div>
+                    <div class="teacher-card__info">
+                        <h3 class="teacher-card__name">Diego Ramírez Torres</h3>
+                        <span class="teacher-card__role">Profesor de Educación Física</span>
+                        <p class="teacher-card__bio">Entrenador certificado con enfoque en desarrollo psicomotriz y deporte recreativo para niños.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NOTICIAS ========== -->
+    <section class="news" id="noticias">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Noticias</span>
+                <h2 class="section-title">Últimas novedades del colegio</h2>
+                <p class="section-desc">Mantente al día con nuestras actividades, logros y eventos más recientes.</p>
+            </div>
+            <div class="news__grid">
+                <article class="news-card reveal">
+                    <div class="news-card__image">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80" alt="Feria de ciencias" loading="lazy">
+                        <span class="news-card__category">Eventos</span>
+                    </div>
+                    <div class="news-card__content">
+                        <span class="news-card__date">📅 15 de marzo, 2026</span>
+                        <h3 class="news-card__title">Gran Feria de Ciencias 2026: Pequeños Científicos</h3>
+                        <p class="news-card__excerpt">Nuestros alumnos presentaron más de 30 proyectos innovadores en la feria anual de ciencias. ¡Los resultados fueron sorprendentes!</p>
+                        <a href="#" class="news-card__link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="news-card reveal">
+                    <div class="news-card__image">
+                        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80" alt="Matrículas abiertas" loading="lazy">
+                        <span class="news-card__category">Admisión</span>
+                    </div>
+                    <div class="news-card__content">
+                        <span class="news-card__date">📅 1 de marzo, 2026</span>
+                        <h3 class="news-card__title">Proceso de admisión 2026: ¡Vacantes limitadas!</h3>
+                        <p class="news-card__excerpt">Ya iniciamos el proceso de admisión para el año escolar 2026. Conoce los requisitos y asegura la vacante de tu hijo.</p>
+                        <a href="#" class="news-card__link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="news-card reveal">
+                    <div class="news-card__image">
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&q=80" alt="Competencia deportiva" loading="lazy">
+                        <span class="news-card__category">Deportes</span>
+                    </div>
+                    <div class="news-card__content">
+                        <span class="news-card__date">📅 20 de febrero, 2026</span>
+                        <h3 class="news-card__title">Nuestros campeones en los Juegos Deportivos Escolares</h3>
+                        <p class="news-card__excerpt">El equipo de atletismo de Pequeños Genios obtuvo el primer lugar en los juegos distritales. ¡Felicitaciones a nuestros deportistas!</p>
+                        <a href="#" class="news-card__link">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="contact" id="contacto">
+        <div class="container contact__inner">
+            <div class="contact__info reveal">
+                <span class="section-tag">Admisión y contacto</span>
+                <h2 class="section-title">¿Quieres que tu hijo forme parte de nuestra familia?</h2>
+                <p class="contact__text">Completa el formulario y nos pondremos en contacto contigo para brindarte toda la información que necesitas sobre nuestro proceso de admisión.</p>
+                <div class="contact__details">
+                    <div class="contact__detail">
+                        <span class="contact__detail-icon">📍</span>
+                        <div>
+                            <strong>Dirección</strong>
+                            <span>Av. Los Próceres 567, Santiago de Surco, Lima</span>
+                        </div>
+                    </div>
+                    <div class="contact__detail">
+                        <span class="contact__detail-icon">📞</span>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <span>+51 1 345 6789</span>
+                        </div>
+                    </div>
+                    <div class="contact__detail">
+                        <span class="contact__detail-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <span>admision@pequenosgenios.edu.pe</span>
+                        </div>
+                    </div>
+                    <div class="contact__detail">
+                        <span class="contact__detail-icon">🕐</span>
+                        <div>
+                            <strong>Horario de atención</strong>
+                            <span>Lun - Vie: 7:30 - 16:00 | Sáb: 8:00 - 12:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__form-wrapper reveal reveal--right">
+                <form class="contact__form" id="contactForm">
+                    <h3 class="contact__form-title">📝 Solicitud de Admisión</h3>
+                    <div class="form-group">
+                        <label for="padre">Nombre del padre/madre</label>
+                        <input type="text" id="padre" name="padre" placeholder="Ej: Juan García López" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="alumno">Nombre del alumno(a)</label>
+                        <input type="text" id="alumno" name="alumno" placeholder="Nombre del niño/niña" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nivel">Nivel educativo</label>
+                            <select id="nivel" name="nivel" required>
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="inicial-3">Inicial — 3 años</option>
+                                <option value="inicial-4">Inicial — 4 años</option>
+                                <option value="inicial-5">Inicial — 5 años</option>
+                                <option value="primaria-1">1° Primaria</option>
+                                <option value="primaria-2">2° Primaria</option>
+                                <option value="primaria-3">3° Primaria</option>
+                                <option value="primaria-4">4° Primaria</option>
+                                <option value="primaria-5">5° Primaria</option>
+                                <option value="primaria-6">6° Primaria</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="anio">Año de ingreso</label>
+                            <select id="anio" name="anio" required>
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje adicional (opcional)</label>
+                        <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Tienes alguna consulta adicional?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Enviar solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="#" class="navbar__logo">
+                        <span class="logo-icon">🎓</span>
+                        <span class="logo-text">Pequeños <strong>Genios</strong></span>
+                    </a>
+                    <p class="footer__desc">Educando con amor, creatividad y excelencia desde 2005. Tu hijo merece la mejor educación.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#profesores">Profesores</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#contacto">Admisión</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Niveles</h4>
+                    <ul>
+                        <li><a href="#nosotros">Inicial (3-5 años)</a></li>
+                        <li><a href="#nosotros">Primaria (6-11 años)</a></li>
+                        <li><a href="#contacto">Proceso de admisión</a></li>
+                        <li><a href="#contacto">Becas y descuentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h4>Síguenos</h4>
+                    <div class="footer__social-icons">
+                        <a href="#" aria-label="Facebook" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z" stroke="currentColor" stroke-width="2"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </a>
+                    </div>
+                    <div class="footer__contact-mini">
+                        <p>📞 +51 1 345 6789</p>
+                        <p>📧 info@pequenosgenios.edu.pe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Colegio Pequeños Genios. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
